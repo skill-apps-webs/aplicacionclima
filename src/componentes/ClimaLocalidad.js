@@ -1,7 +1,10 @@
 
 
 import React from "react";
-
+/**
+ * Julysa
+ * @param {*} param0 
+ */
 const ClimaLocalidad=({nombreciudad,temp})=> {
     const mensaje = temp>27?"Hace calor":"Hace frio"
 

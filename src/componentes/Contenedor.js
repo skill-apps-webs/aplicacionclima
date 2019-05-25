@@ -2,7 +2,9 @@ import React from "react";
 import ListadoLocalidad from "./ListadoLocalidad";
 import ClimaDetalle from "./ClimaDetalle";
 
-
+/**
+ * Vane
+ */
 const Contenedor = () => (
  <div className="contenedor">
     <div> Aplicacion del Tiempo</div>

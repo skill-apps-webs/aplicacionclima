@@ -1,6 +1,9 @@
 import React from "react";
 import ClimaLocalidad from "./ClimaLocalidad";
 
+/**
+ * Felix
+ */
 const ListadoLocalidad=()=>(
     <div className="listadolocalidad">listado del clima
     <div>
