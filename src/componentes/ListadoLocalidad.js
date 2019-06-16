@@ -13,7 +13,7 @@ const ListadoLocalidad=()=>(
             Listado de ciudades con su temperatura
         </div>
         <div>
-            <ClimaLocalidad nombreciudad="Lima" temp={10}>/></ClimaLocalidad>
+            <ClimaLocalidad nombreciudad="Lima" temp={10}></ClimaLocalidad>
             <ClimaLocalidad nombreciudad="Santiago" temp={12}></ClimaLocalidad>
             <ClimaLocalidad nombreciudad="bogota" temp={30}></ClimaLocalidad>
             <ClimaLocalidad nombreciudad="rio de janeiro" temp={33}></ClimaLocalidad>

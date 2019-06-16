@@ -7,17 +7,15 @@ import ClimaDetalle from "./ClimaDetalle";
  */
 const Contenedor = () => (
  <div className="contenedor">
-    <div> Linea de Tiempo</div>
-    <div className="contenido">   
-        <ListadoLocalidad></ListadoLocalidad>
-        <ClimaDetalle></ClimaDetalle>
-        </div>
-     <div> 
-         creado en el lab 3 
-         </div>   
+    <div>Aplicación Clima</div>
+    <div style={{display:'flex'}}>   
+        <ListadoLocalidad />
+        <ClimaDetalle />
     </div>
-
-
+    <div> 
+        creado en el curso de Proyecto Web
+    </div>   
+</div>
 );
   
 export default Contenedor;

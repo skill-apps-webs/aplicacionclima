@@ -10,13 +10,11 @@ const ClimaLocalidad=({nombreciudad,temp})=> {
 
 
     return (
-        <div className="climaLocalidad">
+        <div style={{display:'flex',flexDirection:'column',backgroundColor: 'aliceblue',color:'#087DFF',fontSize:14,padding:0, marginBottom:1}}>
             <h3> CIUDAD: {nombreciudad}</h3>
             <p>Descripcion de la Ciudad:</p>
-            <span> Temperatura: {temp}°</span>
-            <br/>
-            <span> Mensaje: {mensaje}</span>
-            
+            <div> Temperatura: {temp}°</div>
+            <div> Mensaje: {mensaje}</div>
         </div>
     )
 }
