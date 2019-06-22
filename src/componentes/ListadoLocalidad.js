@@ -6,14 +6,14 @@ import { CombineLatestOperator } from "rxjs/internal/observable/combineLatest";
  * Felix
  */
 const arregloLocalidades = [
-    {id:1, nombreciudad:'Lima',temp:15},
-    {id:2, nombreciudad:'Santiago',temp:12},
-    {id:3, nombreciudad:'bogota', temp:30},
-    {id:4, nombreciudad:'rio de janeiro', temp:33},
-    {id:5, nombreciudad:'caracas', temp:33},
-    {id:6, nombreciudad:'new york', temp:25},
-    {id:7, nombreciudad:'japon', temp:13},
-    {id:8, nombreciudad:'montevideo', temp:18},
+    {id:1, nomCiu:'Lima',temp:15},
+    {id:2, nomCiu:'Santiago',temp:12},
+    {id:3, nomCiu:'bogota', temp:30},
+    {id:4, nomCiu:'rio de janeiro', temp:33},
+    {id:5, nomCiu:'caracas', temp:33},
+    {id:6, nomCiu:'new york', temp:25},
+    {id:7, nomCiu:'japon', temp:13},
+    {id:8, nomCiu:'montevideo', temp:18},
     
 ]
 
@@ -37,11 +37,10 @@ class ListadoLocalidad extends Component {
                     Listado de ciudades con su temperatura
                 </div>
                 <div>
-                    {listaLocalidades.map((localidad, index)=>{
-                        return <ClimaLocalidad key={localidad.id} nombreciudad={localidad.nombreciudad} temp={localidad.temp} />
+                    {listaLocalidades.map((item, index)=>{
+                        return <ClimaLocalidad key={item.id} localidad={item} />
                     })}
                 </div>
-            
             </div>
             
         )
