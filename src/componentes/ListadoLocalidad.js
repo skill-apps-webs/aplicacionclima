@@ -28,6 +28,7 @@ class ListadoLocalidad extends Component {
 
     render(){
         const {listaLocalidades} = this.state;
+        const {setLocalidadActivaDelContenedor} = this.props
         return (
             <div className="listadolocalidad">
                 <div>
@@ -38,7 +39,7 @@ class ListadoLocalidad extends Component {
                 </div>
                 <div>
                     {listaLocalidades.map((item, index)=>{
-                        return <ClimaLocalidad key={item.id} localidad={item} />
+                        return <ClimaLocalidad setLocalidadActivaDelContenedor={setLocalidadActivaDelContenedor} key={item.id} localidad={item} />
                     })}
                 </div>
             </div>

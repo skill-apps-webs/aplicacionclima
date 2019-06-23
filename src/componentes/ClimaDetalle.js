@@ -5,8 +5,16 @@ import React, {Component} from "react";
  */
 class ClimaDetalle extends Component{
     render(){
+        const {localidad} = this.props;
+        let mensaje = ""
+        if(localidad === null){
+            mensaje = "No has selecionado ninguna localidad"
+        }else{
+            mensaje  = localidad.nomCiu
+        }
+
         return (
-            <div className="climadetalle">Detalles de climas de Ciudades!!..<br/> La costa central peruana, muestra una serie de microclimas atípicos debido a la influyente y fría corriente de Humboldt que se deriva de la Antártida, <br/>la cercanía de la cordillera de los Andes y su ubicación geográfica, dándole a Lima un clima subtropical, fresco, desértico y húmedo a la vez.
+            <div className="climadetalle">{mensaje}<br/> 
             </div>
         )
     }
